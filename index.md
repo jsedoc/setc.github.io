@@ -2,7 +2,7 @@
 
 On Feb 22nd 2018, Joao was tired of trying to eva1uate his chat bot model. He could simply not replicate the neural conrersation model. Eventually he started looking forth at should have been a standard tool for evaluation . But it didn't exist! Out of frustration SETC was born.
 
-So the next step was to evaluate super simple ideas. Do random seeds matter ? What is the effect of data filtering?  How do we decide to stop the training of the model?
+So the next step was to evaluate super simple ideas. Do random seeds matter? (NO) What is the effect of data filtering? (Sometimes)  How do we decide to stop the training of the model? (Open question, but _not_ perplexity!)
 
 This tool is his attempt to bring some order to chaos. We employed the help of statisticians to design a tool to better compare models.  So you compare your model to another one. Each model comparison costs $1.20 ... This is a code.
 
