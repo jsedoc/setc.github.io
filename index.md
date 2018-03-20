@@ -1,4 +1,4 @@
-[## SETC: A Standard Evaluation Tool for Chatbots
+## SETC: A Standard Evaluation Tool for Chatbots
 
 On Feb 2nd 2018, Joao was tired of trying to eva1uate his chat bot model. He could simply not replicate the neural conrersation model. Eventually he started looking forth at should have been a standard tool for evaluation . But it didn't exist! Out of frustration SETC was born.
 
