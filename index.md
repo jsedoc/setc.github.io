@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## SETC: A Standard Evaluation Tool for Chatbots
 
-You can use the [editor on GitHub](https://github.com/jsedoc/setc.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+On Feb 2 2nd 2018 J oao was tired of trying to eva1uate his chat bot model. He could simply not replicatethe neural conrersation model. Eventually he started looking forth at should have been a standard tool for evaluation . But it didn't exist. Out of frustration SETC was born.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+So the next step was to evaluate super simple ideas . Do random seeds matter ? What is the effect of data filtering, how do we decide to stop the training of the model?
 
-### Markdown
+This tool is his attempt to bring some order to chaos. We employed the help of statisticians to help design a tool to bet so you compare your model to another one. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### We are in a state of confusion
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jsedoc/setc.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Currently researcher do not use standard model parameters, or human analysis setup to test if a model inproves results.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble email joao at upenn dot edu
