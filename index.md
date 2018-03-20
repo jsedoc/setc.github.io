@@ -1,4 +1,4 @@
-## SETC: A Standard Evaluation Tool for Chatbots
+[## SETC: A Standard Evaluation Tool for Chatbots
 
 On Feb 2nd 2018, Joao was tired of trying to eva1uate his chat bot model. He could simply not replicate the neural conrersation model. Eventually he started looking forth at should have been a standard tool for evaluation . But it didn't exist! Out of frustration SETC was born.
 
@@ -8,7 +8,7 @@ This tool is his attempt to bring some order to chaos. We employed the help of s
 
 Consider SETC a vending machine .. insert models and $1.20 and out come evaluation scores! Yay! Now _no one_ should have to suffer.
 
-### We are in a state of confusion
+### [We are in a state of confusion](https://docs.google.com/document/d/1EJPr0dHtaOSKw5AaBCQfueSoJlBT39ZDf-7FRjAerU0/edit?usp=sharing)
 
 Currently researcher do not use standard model parameters, or human analysis setup to test if a model inproves results.
 
