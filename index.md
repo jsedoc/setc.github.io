@@ -12,7 +12,7 @@ Consider SETC a vending machine .. insert models and $1.20 and out come evaluati
 
 Currently researcher do not use standard model parameters, or human analysis setup to test if a model inproves results.
 
-![alt text](https://github.com/jsedoc/setc.io/blob/master/human_evaluator_inconsistency.gif)
+![alt text](https://drive.google.com/file/d/1X89MbHR8eZCia_tEYX1OqeDwRyMeAp7i/view?usp=sharing)
 
 ### Support or Contact
 
