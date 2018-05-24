@@ -2,4 +2,4 @@
 
 This tool is an attempt to bring some order to chaos.
 
-Order -> Chaos.
+Chaos -> Order
