@@ -1,5 +1,5 @@
 google.charts.load('current', {packages: ['corechart', 'bar']});
-google.charts.setOnLoadCallback(drawAnnotations);
+// google.charts.setOnLoadCallback(drawBarGraph);
 
 voteData = 
 {
@@ -7,30 +7,30 @@ voteData =
         {
             "m1win": 12,
             "m2win": 32,
-            "model1": "SeqSeqAttn",
+            "model1": "Seq2SeqAttn",
             "model2": "Human1",
             "tie": 12
         },
         {
             "m1win": 24,
             "m2win": 24,
-            "model1": "SeqSeqAttn",
+            "model1": "Seq2SeqAttn",
             "model2": "Human2",
             "tie": 52
         },
         {
             "m1win": 45,
             "m2win": 12,
-            "model1": "SeqSeqAttn",
+            "model1": "Seq2SeqAttn",
             "model2": "CakeChat",
             "tie": 65
         }
     ],
-    "Cakechat": [
+    "DBDC": [
         {
             "m1win": 12,
             "m2win": 32,
-            "model1": "SeqSeqAttn",
+            "model1": "Seq2SeqAttn",
             "model2": "Human1",
             "tie": 12
         },
@@ -38,21 +38,30 @@ voteData =
             "m1win": 24,
             "m2win": 24,
             "model1": "Human2",
-            "model2": "SeqSeqAttn",
+            "model2": "Seq2SeqAttn",
             "tie": 52
         },
         {
             "m1win": 24,
             "m2win": 12,
-            "model1": "SeqSeqAttn",
-            "model2": "CakeChat",
+            "model1": "Seq2SeqAttn",
+            "model2": "Foobar",
             "tie": 65
         }
     ]
 }
 
+local = {}
+
+// Initialization of various dataset parameters.
+document.onload = function() {
+  local['chosenModel'] = $('#modelSelection').val()
+  local['chosenDataset'] = null
+}
+
+
 function parseData(voteData, dataset, targetModel) {
-	data = voteData[dataset]
+	datasetTasks = voteData[dataset]
   output = []
   output.push(['Model',
                 targetModel  + ' wins',
@@ -61,7 +70,7 @@ function parseData(voteData, dataset, targetModel) {
                 {type: 'string', role: 'annotation'},
                 'Tie',
                 {type: 'string', role: 'annotation'}])
-  for (let task of data) {
+  for (let task of datasetTasks) {
     if (task['model1'] == targetModel) {
       output.push([task['model2'],
                    task['m1win'],
@@ -72,7 +81,7 @@ function parseData(voteData, dataset, targetModel) {
                    task['tie'].toString()]);
     }
     else if (task['model2'] == targetModel) { 
-      output.push([task['model2'],
+      output.push([task['model1'],
                    task['m2win'],
                    task['m2win'].toString(),
                    task['m1win'],
@@ -84,33 +93,9 @@ function parseData(voteData, dataset, targetModel) {
   return output
 }
 
-function drawAnnotations() {
-      var targetModel = 'SeqSeqAttn';
-      var targetDataset = 'NCM';
-
+function drawBarGraph(targetModel, targetDataset) {
 			var data = parseData(voteData, targetDataset, targetModel);
       var dataTable = google.visualization.arrayToDataTable(data)
-      console.log(dataTable)
-
-      // var data = google.visualization.arrayToDataTable([
-      //   ['', '2010 Population', {type: 'string', role: 'annotation'}, '2000 Population', {type: 'string', role: 'annotation'}],
-      //   ['NCM', 8175000, 'a', 8008000, 'b'],
-      //   ['Human 1', 3792000, 'a', 3693999, 'b'],
-      //   ['Human 2', 2695000, 'a', 2896000, 'b'],
-      //   ['Cakechat', 2099000, 'a', 1953000, 'b'],
-      //   ['Philadelphia, PA', 1526000, 'a', 1517000, 'b']
-      // ]);
-
-      //  var dataTable = google.visualization.arrayToDataTable([
-      //   ['City', '2010 Population', {type: 'string', role: 'annotation'},
-      //    '2000 Population', {type: 'string', role: 'annotation'}],
-      //   ['New York City, NY', 8175000, '8.1M', 8008000, '8M'],
-      //   ['Los Angeles, CA', 3792000, '3.8M', 3694000, '3.7M'],
-      //   ['Chicago, IL', 2695000, '2.7M', 2896000, '2.9M'],
-      //   ['Houston, TX', 2099000, '2.1M', 1953000, '2.0M'],
-      //   ['Philadelphia, PA', 1526000, '1.5M', 1517000, '1.5M']
-      // ]); 
-      // console.log(dataTable)
 
       var options = {
         title: 'Human evaluation on dataset: ' + targetDataset,
@@ -144,4 +129,62 @@ function drawAnnotations() {
       };
       var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
       chart.draw(dataTable, options);
+  }
+
+  function getPossibleDatasets(modelName) {
+    /* Not all datasets are available for every model. Retrieces the list of
+       datasets which are available for the specified model.
+    */
+    datasetsToReturn = [];
+    // for (let dataset of voteData) { 
+    for (const [ datasetName, dataset ] of Object.entries(voteData)) {
+      for (let task of dataset) {
+        if (task['model1'] === modelName || task['model2'] === modelName) {
+          if (!datasetsToReturn.includes(datasetName)) {
+            datasetsToReturn.push(datasetName);
+          }
+        }
+      }
     }
+    return datasetsToReturn
+  }
+
+  function loadProfile() {
+    var chosenModel = local['chosenModel']
+    var chosenDataset = local['chosenDataset']
+    var title = '<h3>Model: ' + chosenModel + '</h3>'
+    title += '<h3>Dataset: ' + chosenDataset + '</h3>';
+    document.getElementById('profileTitle').innerHTML = title
+    drawBarGraph(chosenModel, chosenDataset)
+  }
+
+  function setModel() {
+    chosenModel = $('#modelSelection').val()
+    local['chosenModel'] = chosenModel
+
+    datasetOptions = getPossibleDatasets(chosenModel)
+    datasetSelectHtml = ''
+    for (var i=0; i<datasetOptions.length; i++) {
+      datasetSelectHtml += '<option>' + datasetOptions[i] + '</option>\n'
+    }
+    document.getElementById('datasetSelection').innerHTML = datasetSelectHtml
+
+    if (datasetOptions.length > 0) { 
+      $('#datasetSelection').removeAttr('disabled');
+
+      // Default to selecting the first dataset
+      document.getElementById("datasetSelection").value = datasetOptions[0]
+      local['chosenDataset'] = datasetOptions[0]
+
+      // Loading the profile for this model/dataset combination.
+      loadProfile()
+    } else {
+      $('#datasetSelection').attr("disabled", true);
+    }
+  }
+
+  function setDataset() {
+    chosenDataset = $('#datasetSelection').val()
+    local['chosenDataset'] = chosenDataset
+    loadProfile()
+  }
