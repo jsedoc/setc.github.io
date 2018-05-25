@@ -53,10 +53,13 @@ voteData =
 
 local = {}
 
-// Initialization of various dataset parameters.
-document.onload = function() {
+window.onload = function() {
+  /**Contains initialization of various dataset parameters.
+  This gets run when the web page first loads.
+  **/
   local['chosenModel'] = $('#modelSelection').val()
   local['chosenDataset'] = null
+  document.getElementById('metricsTable').style.visibility='hidden';
 }
 
 
@@ -81,7 +84,7 @@ function parseData(voteData, dataset, targetModel) {
                    task['tie'].toString()]);
     }
     else if (task['model2'] == targetModel) { 
-      output.push([task['model1'],
+      output.push(['<a href="www.google.com">' + task['model1'].toString() + '</a>',
                    task['m2win'],
                    task['m2win'].toString(),
                    task['m1win'],
@@ -152,10 +155,25 @@ function drawBarGraph(targetModel, targetDataset) {
   function loadProfile() {
     var chosenModel = local['chosenModel']
     var chosenDataset = local['chosenDataset']
+    
+    // Update the title
     var title = '<h3>Model: ' + chosenModel + '</h3>'
     title += '<h3>Dataset: ' + chosenDataset + '</h3>';
-    document.getElementById('profileTitle').innerHTML = title
-    drawBarGraph(chosenModel, chosenDataset)
+    document.getElementById('profileTitle').innerHTML = title;
+
+    // Update the metrics table
+    var table = document.getElementById("metricsTable");
+    distinct1Row = table.insertRow();
+    distinct1Row.insertCell().innerHTML = 'Distint-1';
+    distinct1Row.insertCell().innerHTML = '0.01234';
+    distinct2Row = table.insertRow();
+    distinct2Row.insertCell().innerHTML = 'Distint-2';
+    distinct2Row.insertCell().innerHTML = '0.01234';
+
+    document.getElementById('metricsTable').style.visibility='visible';
+
+    // Update the bar graph
+    drawBarGraph(chosenModel, chosenDataset);
   }
 
   function setModel() {
