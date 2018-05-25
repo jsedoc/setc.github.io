@@ -69,7 +69,7 @@
               <div class="col">
                 <label for="modelSelection">Select a model:</label>
                 <!--TODO: Dyamically set model and checkpoint options -->
-                <select class="form-control" id="modelSelection" onchange="setModel()">
+                <select class="form-control" id="modelSelection" onchange="onModelSelect()">
                   <option>NCM</option>
                   <option>Seq2SeqAttn</option>
                   <option>CakeChat</option>
@@ -79,7 +79,7 @@
               </div>
               <div class="col">
                 <label for="datasetSelection">Select an evaluation dataset:</label>
-                <select enabled="false" class="form-control" id="datasetSelection" onchange="setDataset()" disabled>
+                <select enabled="false" class="form-control" id="datasetSelection" onchange="onDatasetSelect()">
                 </select>
               </div>
             </div>

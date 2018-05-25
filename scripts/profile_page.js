@@ -59,7 +59,9 @@ window.onload = function() {
   **/
   local['chosenModel'] = $('#modelSelection').val()
   local['chosenDataset'] = null
-  document.getElementById('metricsTable').style.visibility='hidden';
+
+  parseHash()
+  loadProfile()
 }
 
 
@@ -84,7 +86,7 @@ function parseData(voteData, dataset, targetModel) {
                    task['tie'].toString()]);
     }
     else if (task['model2'] == targetModel) { 
-      output.push(['<a href="www.google.com">' + task['model1'].toString() + '</a>',
+      output.push([task['model1'],
                    task['m2win'],
                    task['m2win'].toString(),
                    task['m1win'],
@@ -152,22 +154,43 @@ function drawBarGraph(targetModel, targetDataset) {
     return datasetsToReturn
   }
 
+  function setDatasetFormOptions(modelName) {
+    datasetOptions = getPossibleDatasets(modelName)
+    datasetSelectHtml = ''
+    for (var i=0; i<datasetOptions.length; i++) {
+      datasetSelectHtml += '<option>' + datasetOptions[i] + '</option>\n'
+    }
+    document.getElementById('datasetSelection').innerHTML = datasetSelectHtml
+  }
+
   function loadProfile() {
+    /** Loads all of the info for the particular mode/dataset combination that has been chosen.
+    If either of these values is null, then just clears the screen.
+    **/
     var chosenModel = local['chosenModel']
     var chosenDataset = local['chosenDataset']
-    
+    if (chosenModel == null || chosenDataset == null) {
+      document.getElementById('metricsTable').style.visibility='hidden';
+      return
+    }
+
     // Update the title
     var title = '<h3>Model: ' + chosenModel + '</h3>'
     title += '<h3>Dataset: ' + chosenDataset + '</h3>';
     document.getElementById('profileTitle').innerHTML = title;
 
     // Update the metrics table
+    // TODO: all of this needs to be completely rewritten when I know the format the data will be in.
     var table = document.getElementById("metricsTable");
+    if (table.rows.length == 3) {
+      table.deleteRow(-1);
+      table.deleteRow(-1);
+    }
     distinct1Row = table.insertRow();
-    distinct1Row.insertCell().innerHTML = 'Distint-1';
+    distinct1Row.insertCell().innerHTML = 'Distinct-1';
     distinct1Row.insertCell().innerHTML = '0.01234';
     distinct2Row = table.insertRow();
-    distinct2Row.insertCell().innerHTML = 'Distint-2';
+    distinct2Row.insertCell().innerHTML = 'Average BLEU';
     distinct2Row.insertCell().innerHTML = '0.01234';
 
     document.getElementById('metricsTable').style.visibility='visible';
@@ -176,16 +199,42 @@ function drawBarGraph(targetModel, targetDataset) {
     drawBarGraph(chosenModel, chosenDataset);
   }
 
-  function setModel() {
+  function parseHash() {
+    // slice is to get rid of the '#' symbol at the beginning of the string
+    hash = window.location.hash.slice(1)
+    var params = {}
+    hash.split('&').map(hk => { 
+      let temp = hk.split('='); 
+        params[temp[0]] = (temp[1] === 'null' ? null : temp[1]) 
+    });
+    if (params['model'] != null) {
+      local['chosenModel'] = params['model']
+      document.getElementById("modelSelection").value = local['chosenModel']
+
+      setDatasetFormOptions(local['chosenModel'])
+    }
+    if (params['dataset'] != null) {
+      local['chosenDataset'] = params['dataset']
+      document.getElementById("datasetSelection").value = local['chosenDataset']
+
+      $('#datasetSelection').attr("disabled", false);
+    } else {
+      $('#datasetSelection').attr("disabled", true);
+    }
+  }
+  function updateHash(chosenModel, chosenDataset) {
+    if (chosenDataset == null) {
+      chosenDataset = 'null'
+    }
+    hash = 'model=' + chosenModel + "&dataset=" + chosenDataset
+    window.location.hash = hash
+  }
+
+  function onModelSelect() {
     chosenModel = $('#modelSelection').val()
     local['chosenModel'] = chosenModel
 
-    datasetOptions = getPossibleDatasets(chosenModel)
-    datasetSelectHtml = ''
-    for (var i=0; i<datasetOptions.length; i++) {
-      datasetSelectHtml += '<option>' + datasetOptions[i] + '</option>\n'
-    }
-    document.getElementById('datasetSelection').innerHTML = datasetSelectHtml
+    setDatasetFormOptions(chosenModel);
 
     if (datasetOptions.length > 0) { 
       $('#datasetSelection').removeAttr('disabled');
@@ -197,12 +246,20 @@ function drawBarGraph(targetModel, targetDataset) {
       // Loading the profile for this model/dataset combination.
       loadProfile()
     } else {
+      local['chosenDataset'] = null
       $('#datasetSelection').attr("disabled", true);
     }
+
+    // Update the hash so that if the user refreshes, they see the same page.
+    updateHash(local['chosenModel'], local['chosenDataset'])
   }
 
-  function setDataset() {
+  function onDatasetSelect() {
     chosenDataset = $('#datasetSelection').val()
     local['chosenDataset'] = chosenDataset
+
+    // Update the hash so that if the user refreshes, they see the same page.
+    updateHash(local['chosenModel'], local['chosenDataset'])
+
     loadProfile()
   }
