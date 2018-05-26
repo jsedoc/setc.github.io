@@ -170,33 +170,42 @@ function drawBarGraph(targetModel, targetDataset) {
     var chosenModel = local['chosenModel']
     var chosenDataset = local['chosenDataset']
     if (chosenModel == null || chosenDataset == null) {
-      document.getElementById('metricsTable').style.visibility='hidden';
-      return
+      document.getElementById('profile').style.visibility='hidden';
+    } else {
+      document.getElementById('profile').style.visibility='visible';
+
+      // Update the title
+      var cm = 'Model: ' + chosenModel
+      var cd = 'Dataset: ' + chosenDataset;
+      var title = '<h3 style="text-align: left; width:49%; display: inline-block;">' + cm + '</h3>' +
+              '<h3 style="text-align: right; width:50%;  display: inline-block;">' + cd + '</h3>'
+      
+      document.getElementById('profileTitle').innerHTML = title;
+
+      // Update the links
+      // TODO: Replace these with real links
+      var links = '<p>Paper: www.foo.edu</p>';
+      links +=  '<p>Code: www.github.com</p>';
+      links += '<p>Checkpoints: www.amazon.com/</p>';
+      document.getElementById('profileContents').innerHTML = links;
+
+      // Update the metrics table
+      // TODO: all of this needs to be completely rewritten when I know the format the data will be in.
+      var table = document.getElementById("metricsTable");
+      if (table.rows.length == 3) {
+        table.deleteRow(-1);
+        table.deleteRow(-1);
+      }
+      distinct1Row = table.insertRow();
+      distinct1Row.insertCell().innerHTML = 'Distinct-1';
+      distinct1Row.insertCell().innerHTML = '0.01234';
+      distinct2Row = table.insertRow();
+      distinct2Row.insertCell().innerHTML = 'Average BLEU';
+      distinct2Row.insertCell().innerHTML = '0.01234';
+
+      // Update the bar graph
+      drawBarGraph(chosenModel, chosenDataset);
     }
-
-    // Update the title
-    var title = '<h3>Model: ' + chosenModel + '</h3>'
-    title += '<h3>Dataset: ' + chosenDataset + '</h3>';
-    document.getElementById('profileTitle').innerHTML = title;
-
-    // Update the metrics table
-    // TODO: all of this needs to be completely rewritten when I know the format the data will be in.
-    var table = document.getElementById("metricsTable");
-    if (table.rows.length == 3) {
-      table.deleteRow(-1);
-      table.deleteRow(-1);
-    }
-    distinct1Row = table.insertRow();
-    distinct1Row.insertCell().innerHTML = 'Distinct-1';
-    distinct1Row.insertCell().innerHTML = '0.01234';
-    distinct2Row = table.insertRow();
-    distinct2Row.insertCell().innerHTML = 'Average BLEU';
-    distinct2Row.insertCell().innerHTML = '0.01234';
-
-    document.getElementById('metricsTable').style.visibility='visible';
-
-    // Update the bar graph
-    drawBarGraph(chosenModel, chosenDataset);
   }
 
   function parseHash() {
@@ -248,6 +257,7 @@ function drawBarGraph(targetModel, targetDataset) {
     } else {
       local['chosenDataset'] = null
       $('#datasetSelection').attr("disabled", true);
+      document.getElementById('profile').style.visibility='hidden';
     }
 
     // Update the hash so that if the user refreshes, they see the same page.
