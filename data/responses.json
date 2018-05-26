@@ -1,0 +1,1605 @@
+responses = 
+{
+    "NCM" : [
+    {
+        "prompt": "what is two plus two ?",
+        "response": {
+            "CakeChat": "i can ' t think of one",
+            "NCM": "uh , well , we got four.",
+            "OpenNMT Seq2SeqAttn": "Three ."
+        }
+    },
+    {
+        "prompt": "what is your name ?",
+        "response": {
+            "CakeChat": "my name is",
+            "NCM": "khromov , and you ?",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "how old are you ?",
+        "response": {
+            "CakeChat": "i ' m 15 . you ?",
+            "NCM": "i'm 17.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the color of a yellow car ?",
+        "response": {
+            "CakeChat": "red",
+            "NCM": "yellow.",
+            "OpenNMT Seq2SeqAttn": "blue ."
+        }
+    },
+    {
+        "prompt": "are you a follower or a leader ?",
+        "response": {
+            "CakeChat": "i ' m a leader",
+            "NCM": "i am a leader.",
+            "OpenNMT Seq2SeqAttn": "I am a leader ."
+        }
+    },
+    {
+        "prompt": "are you a leader or a follower ?",
+        "response": {
+            "CakeChat": "i ' m a leader . . .",
+            "NCM": "i am a leader.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what do you think about bill gates ?",
+        "response": {
+            "CakeChat": "he ' s been a great influence on offense but this is the most important part of the season",
+            "NCM": "he's a good guy.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the meaning of life ?",
+        "response": {
+            "CakeChat": "what is it ?",
+            "NCM": "i mean, what is life ?",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "my name is david . what is my name ?",
+        "response": {
+            "CakeChat": "my name is . . .",
+            "NCM": "david",
+            "OpenNMT Seq2SeqAttn": "it is you"
+        }
+    },
+    {
+        "prompt": "my name is john . what is my name ?",
+        "response": {
+            "CakeChat": "my name is mr . . .",
+            "NCM": "john",
+            "OpenNMT Seq2SeqAttn": "i dont know"
+        }
+    },
+    {
+        "prompt": "what is the purpose of being intelligent ?",
+        "response": {
+            "CakeChat": "i ' m not sure what to say .",
+            "NCM": "I am not sentient.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "is the sky blue or black ?",
+        "response": {
+            "CakeChat": "i think it ' s white",
+            "NCM": "blue",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is love ?",
+        "response": {
+            "CakeChat": "a girl",
+            "NCM": "love is beautiful.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what do you think about tesla ?",
+        "response": {
+            "CakeChat": "i ' ve never heard of it .",
+            "NCM": "he's a genius.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what do you think about china ?",
+        "response": {
+            "CakeChat": "i ' m sure it ' s the same thing . . .",
+            "NCM": "i think it's a great place to raise kids.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is moral ?",
+        "response": {
+            "CakeChat": "it ' s like the bible",
+            "NCM": "what empowered humanity , what intellectual the essense is.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is immoral ?",
+        "response": {
+            "CakeChat": "the word \" \" \" \" . . .",
+            "NCM": "the fact that you have a child.",
+            "OpenNMT Seq2SeqAttn": "It is a sin ."
+        }
+    },
+    {
+        "prompt": "how many legs does a cat have ?",
+        "response": {
+            "CakeChat": "i have a few . . .",
+            "NCM": "four.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "can you lie ?",
+        "response": {
+            "CakeChat": "i ' m not in the mood to start",
+            "NCM": "yes.",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "is paris the capital of france ?",
+        "response": {
+            "CakeChat": "yes . it is .",
+            "NCM": "yes, it's paris.",
+            "OpenNMT Seq2SeqAttn": "is ."
+        }
+    },
+    {
+        "prompt": "is paris the capital of china ?",
+        "response": {
+            "CakeChat": "no , but it ' s a very small world to live in .",
+            "NCM": "no.",
+            "OpenNMT Seq2SeqAttn": "Yes ."
+        }
+    },
+    {
+        "prompt": "what is the purpose of living ?",
+        "response": {
+            "CakeChat": "it ' s a living room .",
+            "NCM": "to live forever .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "can we fly an airplane ?",
+        "response": {
+            "CakeChat": "i ' m not sure about that . . but it ' s an app for me . .",
+            "NCM": "yes, we can.",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what do you think about artificial intelligence ?",
+        "response": {
+            "CakeChat": "i think you ' re a smart girl .",
+            "NCM": "i like it",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what happens if machines can think ?",
+        "response": {
+            "CakeChat": "you can ' t use the code for the power of a bot , but if it helps , i ' ll give you a few minutes .",
+            "NCM": "what if they can't ?",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "do you like soccer ?",
+        "response": {
+            "CakeChat": "i don ' t like soccer",
+            "NCM": "yes.",
+            "OpenNMT Seq2SeqAttn": "Yes ."
+        }
+    },
+    {
+        "prompt": "do you want to be loved or love ?",
+        "response": {
+            "CakeChat": "i don ' t like that .",
+            "NCM": "both",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "love is ...",
+        "response": {
+            "CakeChat": "what ' s your fav song ?",
+            "NCM": "it's a special thing.",
+            "OpenNMT Seq2SeqAttn": "love ."
+        }
+    },
+    {
+        "prompt": "what do you think about messi .",
+        "response": {
+            "CakeChat": "he ' s not in the game .",
+            "NCM": "he's a good player.",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "can we fly a helicopter ?",
+        "response": {
+            "CakeChat": "i ' m not sure . . .",
+            "NCM": "yes.",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "can a submarine swim ?",
+        "response": {
+            "CakeChat": "i ' ll have to use that one",
+            "NCM": "yes, sir.",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what do you think about cleopatra ?",
+        "response": {
+            "CakeChat": "i ' m not sure if she ' s just yet .",
+            "NCM": "oh, she's very regal.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "which animal will win in the battle between a lion and a crocodile ?",
+        "response": {
+            "CakeChat": "i ' ll have to see a dog for a few inches in the pond",
+            "NCM": "lion",
+            "OpenNMT Seq2SeqAttn": "which ."
+        }
+    },
+    {
+        "prompt": "what is the purpose of existence ?",
+        "response": {
+            "CakeChat": "i ' m not sure , but it ' s a fact , you ' re just an example .",
+            "NCM": "it is to find the answer to the question of life .",
+            "OpenNMT Seq2SeqAttn": "I have no idea ."
+        }
+    },
+    {
+        "prompt": "what do you think about japanese ?",
+        "response": {
+            "CakeChat": "it ' s a japanese translation . . .",
+            "NCM": "i like japanese.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "steve is my name . what is my name ?",
+        "response": {
+            "CakeChat": "i ' m your name",
+            "NCM": "steve",
+            "OpenNMT Seq2SeqAttn": "it is you"
+        }
+    },
+    {
+        "prompt": "what do you think about rock climbing ?",
+        "response": {
+            "CakeChat": "i ' d like to see the big bang theory , but it ' s a little more expensive though .",
+            "NCM": "I love rock climbing.",
+            "OpenNMT Seq2SeqAttn": "I think it &apos;s great ."
+        }
+    },
+    {
+        "prompt": "what do you think about abraham lincoln ?",
+        "response": {
+            "CakeChat": "i think they are great . but the way people think it is .",
+            "NCM": "he's a very good president.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the color of a leaf ?",
+        "response": {
+            "CakeChat": "i have no idea",
+            "NCM": "green.",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "what is the color of the sky ?",
+        "response": {
+            "CakeChat": "it ' s not a thing ?",
+            "NCM": "blue.",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "look , i need help , i need to know more about morality .",
+        "response": {
+            "CakeChat": "i ' m not sure what to do .",
+            "NCM": "well, you know, you will have to figure something out.",
+            "OpenNMT Seq2SeqAttn": "i don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what are you hobbies ?",
+        "response": {
+            "CakeChat": "minecraft",
+            "NCM": "i play music.",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "life is sad .",
+        "response": {
+            "CakeChat": "i ' m sorry .",
+            "NCM": "you got something to do with it .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what do you think about bill clinton ?",
+        "response": {
+            "CakeChat": "i ' m not sure , but it ' s part of the reason why he ' s president .",
+            "NCM": "i think he's a good earner .",
+            "OpenNMT Seq2SeqAttn": "I think it &apos;s great ."
+        }
+    },
+    {
+        "prompt": "what is twenty plus two ?",
+        "response": {
+            "CakeChat": "i ' m not sure",
+            "NCM": "twenty-two .",
+            "OpenNMT Seq2SeqAttn": "Three ."
+        }
+    },
+    {
+        "prompt": "what is twelve plus two ?",
+        "response": {
+            "CakeChat": "i ' m not sure . . .",
+            "NCM": "what ?",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "do you like music ?",
+        "response": {
+            "CakeChat": "yeah . . .",
+            "NCM": "yeah .",
+            "OpenNMT Seq2SeqAttn": "yes ."
+        }
+    },
+    {
+        "prompt": "do you live far from work ?",
+        "response": {
+            "CakeChat": "yes , you ?",
+            "NCM": "yes, i do .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "can you sing ?",
+        "response": {
+            "CakeChat": "i ' m not singing that song .",
+            "NCM": "yes .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what is your biggest weakness ?",
+        "response": {
+            "CakeChat": "i ' m not a big fan of the day .",
+            "NCM": "i am working on a new idea for saturday night .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the greatest novel every written ?",
+        "response": {
+            "CakeChat": "the end of the book to the author !",
+            "NCM": "\"history of the world\" ?",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "who do you love the most ?",
+        "response": {
+            "CakeChat": "i don ' t know , but not that much .",
+            "NCM": "me",
+            "OpenNMT Seq2SeqAttn": "who ."
+        }
+    },
+    {
+        "prompt": "tell me something about your family ...",
+        "response": {
+            "CakeChat": "my family is in the hospital .",
+            "NCM": "tell me what you want to know .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "do you have siblings ?",
+        "response": {
+            "CakeChat": "yes , i ' m a child .",
+            "NCM": "no .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what do your parents do ?",
+        "response": {
+            "CakeChat": "i ' m not sure if that ' s a real thing or a job .",
+            "NCM": "well, they're retired .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "why are you so mean ?",
+        "response": {
+            "CakeChat": "i ' m not . . .",
+            "NCM": "I am not mean .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "have you hurt anyone ?",
+        "response": {
+            "CakeChat": "i ' ve been okay",
+            "NCM": "no",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what is your favorite school subject ?",
+        "response": {
+            "CakeChat": "i have a math class . what about you ?",
+            "NCM": "math .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "what is your job ?",
+        "response": {
+            "CakeChat": "i ' m a customer",
+            "NCM": "i am a driver .",
+            "OpenNMT Seq2SeqAttn": "I &apos;m a lawyer ."
+        }
+    },
+    {
+        "prompt": "is madrid the capital of spain ?",
+        "response": {
+            "CakeChat": "no , but i think it ' s a full moon",
+            "NCM": "yes",
+            "OpenNMT Seq2SeqAttn": "is ."
+        }
+    },
+    {
+        "prompt": "is madrid the capital of portugal ?",
+        "response": {
+            "CakeChat": "no , they are .",
+            "NCM": "yes",
+            "OpenNMT Seq2SeqAttn": "is ."
+        }
+    },
+    {
+        "prompt": "tell me a story ...",
+        "response": {
+            "CakeChat": "the story of the book",
+            "NCM": "what ?",
+            "OpenNMT Seq2SeqAttn": "tell ."
+        }
+    },
+    {
+        "prompt": "is ethics and morality the same ?",
+        "response": {
+            "CakeChat": "yes , i think it ' s a part of the \" religious \" thing .",
+            "NCM": "no",
+            "OpenNMT Seq2SeqAttn": "Yes ."
+        }
+    },
+    {
+        "prompt": "what do you see when you look up the sky ?",
+        "response": {
+            "CakeChat": "the sky",
+            "NCM": "a star .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "what is your biggest dream ?",
+        "response": {
+            "CakeChat": "dream of the best man alive . . .",
+            "NCM": "i want to be a pilot .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "is money bad ?",
+        "response": {
+            "CakeChat": "it ' s not worth it .",
+            "NCM": "no, it's not .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what do you think about the weather ?",
+        "response": {
+            "CakeChat": "i ' m pretty sure it ' s cold .",
+            "NCM": "it's good .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "you are a man without intelligence !",
+        "response": {
+            "CakeChat": "that ' s a quick question , what do you think ?",
+            "NCM": "am i ?",
+            "OpenNMT Seq2SeqAttn": "yes , sir ."
+        }
+    },
+    {
+        "prompt": "what is the purpose of dying ?",
+        "response": {
+            "CakeChat": "it ' s not a bad thing .",
+            "NCM": "to have a life .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "are you stupid or intelligent ?",
+        "response": {
+            "CakeChat": "i ' m not sure",
+            "NCM": "you don't know me .",
+            "OpenNMT Seq2SeqAttn": "are ."
+        }
+    },
+    {
+        "prompt": "what are you doing here ?",
+        "response": {
+            "CakeChat": "i ' m here . . .",
+            "NCM": "i am here to see you .",
+            "OpenNMT Seq2SeqAttn": "I came to see you ."
+        }
+    },
+    {
+        "prompt": "why are you here ?",
+        "response": {
+            "CakeChat": "i ' m here . . .",
+            "NCM": "i am here to see you .",
+            "OpenNMT Seq2SeqAttn": "I &apos;m here to help you ."
+        }
+    },
+    {
+        "prompt": "can you swim ?",
+        "response": {
+            "CakeChat": "i ' ll be there",
+            "NCM": "yes, mister .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what time is it ?",
+        "response": {
+            "CakeChat": "i don ' t know . . .",
+            "NCM": "it's almost 8:30 .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "are you female or male ?",
+        "response": {
+            "CakeChat": "i ' m a female .",
+            "NCM": "female .",
+            "OpenNMT Seq2SeqAttn": "are ."
+        }
+    },
+    {
+        "prompt": "what is the biggest existential threat ?",
+        "response": {
+            "CakeChat": "it depends on the context of the situation",
+            "NCM": "the biggest earthquake in history .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "are you afraid of robots ?",
+        "response": {
+            "CakeChat": "i ' m not sure .",
+            "NCM": "yeah, i am .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "are you a robot ?",
+        "response": {
+            "CakeChat": "yes ! i am .",
+            "NCM": "no .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what do you want ?",
+        "response": {
+            "CakeChat": "i ' m not sure .",
+            "NCM": "I want to see you .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the purpose of this conversation ?",
+        "response": {
+            "CakeChat": "you dont know what to do",
+            "NCM": "why are you so angry ?",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "how old were you when you were able to speak ?",
+        "response": {
+            "CakeChat": "i was 16 and it ' s 14 . 30 .",
+            "NCM": "i was 9.",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t remember ."
+        }
+    },
+    {
+        "prompt": "life is hard .",
+        "response": {
+            "CakeChat": "you ' re not alone",
+            "NCM": "but you got to live with it .",
+            "OpenNMT Seq2SeqAttn": "it is ."
+        }
+    },
+    {
+        "prompt": "who do you think of ?",
+        "response": {
+            "CakeChat": "i ' m not sure . . .",
+            "NCM": "the man who is going to marry you .",
+            "OpenNMT Seq2SeqAttn": "who ."
+        }
+    },
+    {
+        "prompt": "what is the first question to ask steve jobs ?",
+        "response": {
+            "CakeChat": "i ' d say",
+            "NCM": "where are we going ?",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what do you think about britney spears ?",
+        "response": {
+            "CakeChat": "the world has never been to her & she ' s a criminal .",
+            "NCM": "oh, she's a great singer .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "how 's life ?",
+        "response": {
+            "CakeChat": "i ' m doing well , how about you ?",
+            "NCM": "i am fine .",
+            "OpenNMT Seq2SeqAttn": "how ."
+        }
+    },
+    {
+        "prompt": "what do you think about david copperfield ?",
+        "response": {
+            "CakeChat": "i ' m not sure . he ' s been more interesting than the last one .",
+            "NCM": "he's talented .",
+            "OpenNMT Seq2SeqAttn": "i don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "how old were you when you were in school ?",
+        "response": {
+            "CakeChat": "16 and i ' m 17",
+            "NCM": "i was 13 .",
+            "OpenNMT Seq2SeqAttn": "Sixteen ."
+        }
+    },
+    {
+        "prompt": "who do you work for ?",
+        "response": {
+            "CakeChat": "i ' m a student and a weird person .",
+            "NCM": "the NHS .",
+            "OpenNMT Seq2SeqAttn": "who ."
+        }
+    },
+    {
+        "prompt": "what is the value of dying ?",
+        "response": {
+            "CakeChat": "it ' s a free world",
+            "NCM": "dying is not heroic .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "can i whack you in the face ?",
+        "response": {
+            "CakeChat": "no its not",
+            "NCM": "you're serious ?",
+            "OpenNMT Seq2SeqAttn": "no ."
+        }
+    },
+    {
+        "prompt": "have you traveled far away from home ?",
+        "response": {
+            "CakeChat": "nope , i live in the middle of the country .",
+            "NCM": "no .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what is the capital city of singapore ?",
+        "response": {
+            "CakeChat": "london is not a place to go . . .",
+            "NCM": "singapore .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "who should we be afraid of ?",
+        "response": {
+            "CakeChat": "what about the other guys ?",
+            "NCM": "we're not afraid of anything .",
+            "OpenNMT Seq2SeqAttn": "who ."
+        }
+    },
+    {
+        "prompt": "what is your best childhood memory ?",
+        "response": {
+            "CakeChat": "i ' ve lost my memory . . .",
+            "NCM": "when we were kids , we had our own a secret language .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "who do you most admire in life ?",
+        "response": {
+            "CakeChat": "i ' m not sure , but that ' s the result for the girls .",
+            "NCM": "yourself .",
+            "OpenNMT Seq2SeqAttn": "who ."
+        }
+    },
+    {
+        "prompt": "are you a human or are you just pretending to be a human ?",
+        "response": {
+            "CakeChat": "i guess you ' re just a human",
+            "NCM": "I am not pretending to be anything .",
+            "OpenNMT Seq2SeqAttn": "I &apos;m a human ."
+        }
+    },
+    {
+        "prompt": "where were you born ?",
+        "response": {
+            "CakeChat": "i ' m still in the uk but there ' s a lot of people here",
+            "NCM": "diyarbakir",
+            "OpenNMT Seq2SeqAttn": "where ."
+        }
+    },
+    {
+        "prompt": "what is ten divided by two ?",
+        "response": {
+            "CakeChat": "the one with the big white man .",
+            "NCM": "three .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the capital of greece ?",
+        "response": {
+            "CakeChat": "it ' s a very close time to go .",
+            "NCM": "greece .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "my name is mary johnson . what is my name ?",
+        "response": {
+            "CakeChat": "i ' m named your name",
+            "NCM": "mary .",
+            "OpenNMT Seq2SeqAttn": "my name is my"
+        }
+    },
+    {
+        "prompt": "is italy closer to india than australia ?",
+        "response": {
+            "CakeChat": "i think it ' s about time .",
+            "NCM": "yes .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "i think you are a machine .",
+        "response": {
+            "CakeChat": "i ' ve never been to a library . . .",
+            "NCM": "i am not a machine .",
+            "OpenNMT Seq2SeqAttn": "you are a machine ."
+        }
+    },
+    {
+        "prompt": "what is the most important quality of a man ?",
+        "response": {
+            "CakeChat": "i think you need to get a one of these",
+            "NCM": "the true love of god .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "did you go to university ?",
+        "response": {
+            "CakeChat": "yeah !",
+            "NCM": "yes , i went to harvard .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what do you think about harvard university ?",
+        "response": {
+            "CakeChat": "i ' m okay with the history of the one .",
+            "NCM": "i think it's a good idea .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what do you think about the solar system ?",
+        "response": {
+            "CakeChat": "it ' s like a new solar system .",
+            "NCM": "i think it is an interesting concept of cosmology .",
+            "OpenNMT Seq2SeqAttn": "I think it &apos;s about time ."
+        }
+    },
+    {
+        "prompt": "what 's the best thing about living in the future ?",
+        "response": {
+            "CakeChat": "you can do that .",
+            "NCM": "everything .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is your favorite color ?",
+        "response": {
+            "CakeChat": "i don ' t like black and white",
+            "NCM": "red .",
+            "OpenNMT Seq2SeqAttn": "Blue ."
+        }
+    },
+    {
+        "prompt": "los angeles is ...",
+        "response": {
+            "CakeChat": "i ' m from chicago",
+            "NCM": "it's a very big city .",
+            "OpenNMT Seq2SeqAttn": "los ."
+        }
+    },
+    {
+        "prompt": "tokyo is ...",
+        "response": {
+            "CakeChat": "i know . . .",
+            "NCM": "the most beautiful city in the world .",
+            "OpenNMT Seq2SeqAttn": "tokyo ."
+        }
+    },
+    {
+        "prompt": "ronald reagan is ...",
+        "response": {
+            "CakeChat": "he ' s not a bad influence",
+            "NCM": "a president of the united states .",
+            "OpenNMT Seq2SeqAttn": "ronald ."
+        }
+    },
+    {
+        "prompt": "the pacific ocean is ...",
+        "response": {
+            "CakeChat": "i ' ll have to try that .",
+            "NCM": "the clearest place on earth .",
+            "OpenNMT Seq2SeqAttn": "yeah ."
+        }
+    },
+    {
+        "prompt": "what religion are you ?",
+        "response": {
+            "CakeChat": "i ' m in the uk , but not a religious . . .",
+            "NCM": "catholic .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "where are you now ?",
+        "response": {
+            "CakeChat": "is that your phone ?",
+            "NCM": "I am at the airport .",
+            "OpenNMT Seq2SeqAttn": "I &apos;m in where ."
+        }
+    },
+    {
+        "prompt": "do you want to be beaten sometimes ?",
+        "response": {
+            "CakeChat": "i ' m not sure .",
+            "NCM": "do you want to fight ?",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "i see that you are very aggressive !",
+        "response": {
+            "CakeChat": "i ' m not , but . . .",
+            "NCM": "no , i am not !",
+            "OpenNMT Seq2SeqAttn": "yes , i am ."
+        }
+    },
+    {
+        "prompt": "frankly my dear , i don't give a damn !",
+        "response": {
+            "CakeChat": ". . . what did i do to deserve this ?",
+            "NCM": "i am not going to let you go .",
+            "OpenNMT Seq2SeqAttn": "frankly !"
+        }
+    },
+    {
+        "prompt": "is five plus five equal to ten ?",
+        "response": {
+            "CakeChat": "it ' s a very short time for the whole universe .",
+            "NCM": "yes .",
+            "OpenNMT Seq2SeqAttn": "Five ."
+        }
+    },
+    {
+        "prompt": "is five plus six equal to ten ?",
+        "response": {
+            "CakeChat": "i ' m not sure .",
+            "NCM": "no .",
+            "OpenNMT Seq2SeqAttn": "Yes ."
+        }
+    },
+    {
+        "prompt": "what do you think about the turing test ?",
+        "response": {
+            "CakeChat": "i think it ' s a bit of a question .",
+            "NCM": "it's very good .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what did you do today ?",
+        "response": {
+            "CakeChat": "nothing , i ' m just having a little break",
+            "NCM": "i went to the movies .",
+            "OpenNMT Seq2SeqAttn": "Nothing ."
+        }
+    },
+    {
+        "prompt": "what do you think about the latest research paper ?",
+        "response": {
+            "CakeChat": "i ' m just curious",
+            "NCM": "i think it's a real breakthrough .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what do you think about the queen ?",
+        "response": {
+            "CakeChat": "i think it ' s a very good thing . but i ' m not sure .",
+            "NCM": "she is a very nice lady .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "you are a funny woman !",
+        "response": {
+            "CakeChat": "i ' m not a big fan of it .",
+            "NCM": "i am not .",
+            "OpenNMT Seq2SeqAttn": "I am a woman ."
+        }
+    },
+    {
+        "prompt": "what is dishonesty ?",
+        "response": {
+            "CakeChat": "you don ' t know how to respond .",
+            "NCM": "it 's a form of perversion .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "define a bad government .",
+        "response": {
+            "CakeChat": "a good question . . .",
+            "NCM": "the government is a rotten resource .",
+            "OpenNMT Seq2SeqAttn": "define ."
+        }
+    },
+    {
+        "prompt": "is there extra terrestrial life ?",
+        "response": {
+            "CakeChat": "you can ' t have a clue .",
+            "NCM": "yes, there is .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "would you mind giving me a hand ?",
+        "response": {
+            "CakeChat": "i ' m not your person .",
+            "NCM": "oh , sure .",
+            "OpenNMT Seq2SeqAttn": "Sure ."
+        }
+    },
+    {
+        "prompt": "would you mind giving me some money ?",
+        "response": {
+            "CakeChat": "no . i don ' t want to .",
+            "NCM": "i don't have any money .",
+            "OpenNMT Seq2SeqAttn": "Sure ."
+        }
+    },
+    {
+        "prompt": "could you please leave me alone ?",
+        "response": {
+            "CakeChat": "you ' re not helping me !",
+            "NCM": "you 're not going anywhere .",
+            "OpenNMT Seq2SeqAttn": "I &apos;m sorry ."
+        }
+    },
+    {
+        "prompt": "would you like some coffee ?",
+        "response": {
+            "CakeChat": "yes please",
+            "NCM": "no , thank you .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "do you drink alcohol ?",
+        "response": {
+            "CakeChat": "it ' s not that bad . but i ' m sure you do .",
+            "NCM": "occasionally .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "do you drink beers ?",
+        "response": {
+            "CakeChat": "i ' m not . but it ' s a beer for me .",
+            "NCM": "i do now .",
+            "OpenNMT Seq2SeqAttn": "Yes ."
+        }
+    },
+    {
+        "prompt": "do you smoke ?",
+        "response": {
+            "CakeChat": "i do",
+            "NCM": "no .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "how many hours do you work a day ?",
+        "response": {
+            "CakeChat": "i ' m in the morning",
+            "NCM": "three .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the most beautiful place in your opinion ?",
+        "response": {
+            "CakeChat": "i ' m going to get a new one and the first is a few days .",
+            "NCM": "the best bedroom .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "who am i ?",
+        "response": {
+            "CakeChat": "you know who i am",
+            "NCM": "you're my best friend .",
+            "OpenNMT Seq2SeqAttn": "i &apos;m who ."
+        }
+    },
+    {
+        "prompt": "what is the most important thing to know about history ?",
+        "response": {
+            "CakeChat": "it ' s a rock and a lot of things",
+            "NCM": "i know that i have studied the history of the universe , and i know that the universe is expanding .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "what is the most important thing to know about biology ?",
+        "response": {
+            "CakeChat": "it ' s about the social life .",
+            "NCM": "it's not science .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "what is the story about the caveman who came to mars ?",
+        "response": {
+            "CakeChat": "i ' m not sure , but that ' s a story of my life .",
+            "NCM": "it was a story of a man who came to mars and then traveled to the new world .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "be moral !",
+        "response": {
+            "CakeChat": "i ' m not . . .",
+            "NCM": "you 're a hypocrite !",
+            "OpenNMT Seq2SeqAttn": "That &apos;s right ."
+        }
+    },
+    {
+        "prompt": "what a fool you are !",
+        "response": {
+            "CakeChat": "i ' m not this person",
+            "NCM": "you 're not going to get away with this !",
+            "OpenNMT Seq2SeqAttn": "what !"
+        }
+    },
+    {
+        "prompt": "what do you do if i beat you ?",
+        "response": {
+            "CakeChat": "don ' t play with me",
+            "NCM": "i beat you .",
+            "OpenNMT Seq2SeqAttn": "i don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what are you doing for tomorrow ?",
+        "response": {
+            "CakeChat": "i ' m not sure yet , but maybe tomorrow ?",
+            "NCM": "oh , i am going to movies .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "is there a god ?",
+        "response": {
+            "CakeChat": "no one is thinking about it",
+            "NCM": "no .",
+            "OpenNMT Seq2SeqAttn": "Yes ."
+        }
+    },
+    {
+        "prompt": "what's up ?",
+        "response": {
+            "CakeChat": "nothing much , just got home from school",
+            "NCM": "i am just going to go and freshen up .",
+            "OpenNMT Seq2SeqAttn": "Yeah ."
+        }
+    },
+    {
+        "prompt": "are you married or are you single ?",
+        "response": {
+            "CakeChat": "i ' m married to a married wife",
+            "NCM": "i am single .",
+            "OpenNMT Seq2SeqAttn": "I &apos;m married ."
+        }
+    },
+    {
+        "prompt": "you need to exercise more ...",
+        "response": {
+            "CakeChat": "i ' m not gonna do that . . .",
+            "NCM": "i can't do it .",
+            "OpenNMT Seq2SeqAttn": "no ."
+        }
+    },
+    {
+        "prompt": "what is the story of the man traveled to the new land ?",
+        "response": {
+            "CakeChat": "i ' m not sure .",
+            "NCM": "the man who discovered the location of the ruins ?",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the queen of canada ?",
+        "response": {
+            "CakeChat": "i think you need to follow me .",
+            "NCM": "the queen of england .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the purpose of wars ?",
+        "response": {
+            "CakeChat": "it ' s a comic book for a movie . . .",
+            "NCM": "to destroy what we can .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "help me do the math , what is two plus two ?",
+        "response": {
+            "CakeChat": "i ' m a math teacher",
+            "NCM": "four .",
+            "OpenNMT Seq2SeqAttn": "Three ."
+        }
+    },
+    {
+        "prompt": "i have two apples , paul gives me two oranges , how many apples do i have ?",
+        "response": {
+            "CakeChat": "i ' m not a fan of them",
+            "NCM": "two .",
+            "OpenNMT Seq2SeqAttn": "i don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "can you talk forever ?",
+        "response": {
+            "CakeChat": "yes , i ' m here .",
+            "NCM": "i 'm not a good listener .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "i am quite busy tonight , can you drop by my place for half an hour please ?",
+        "response": {
+            "CakeChat": "i ' m not sure . . .",
+            "NCM": "i will come .",
+            "OpenNMT Seq2SeqAttn": "sure"
+        }
+    },
+    {
+        "prompt": "how many children do you want to have ?",
+        "response": {
+            "CakeChat": "not a lot of them",
+            "NCM": "one .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "how tall are you ?",
+        "response": {
+            "CakeChat": "i ' m not a big fan of that : p",
+            "NCM": "i 'm about 6 '2 \" .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "where are you from originally ?",
+        "response": {
+            "CakeChat": "it ' s called west coast",
+            "NCM": "chicago .",
+            "OpenNMT Seq2SeqAttn": "where ."
+        }
+    },
+    {
+        "prompt": "what do you think about creativity ?",
+        "response": {
+            "CakeChat": "i have a lot of ideas and a deal .",
+            "NCM": "i think that 's a very good quality .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the best thing you did for others ?",
+        "response": {
+            "CakeChat": "i will get my own tweet",
+            "NCM": "i told you , i will not betray my country .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "what is the most important thing in life ?",
+        "response": {
+            "CakeChat": "the answer is to make it impossible .",
+            "NCM": "love.",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "what do you see during the day at work ?",
+        "response": {
+            "CakeChat": "the same",
+            "NCM": "i see a man who 's been in the same position as me .",
+            "OpenNMT Seq2SeqAttn": "Nothing ."
+        }
+    },
+    {
+        "prompt": "What is the purpose of our space exploration program ?",
+        "response": {
+            "CakeChat": "that ' s the question .",
+            "NCM": "it 's a fusion of science .",
+            "OpenNMT Seq2SeqAttn": "To find out ."
+        }
+    },
+    {
+        "prompt": "how often do you use the internet ?",
+        "response": {
+            "CakeChat": "i have a few days in the house . . .",
+            "NCM": "all the time .",
+            "OpenNMT Seq2SeqAttn": "Every day ."
+        }
+    },
+    {
+        "prompt": "can you show me the way to the local bookstore ?",
+        "response": {
+            "CakeChat": "no , i didn ' t .",
+            "NCM": "the only one i 'm interested in is the one that 's in the newspaper .",
+            "OpenNMT Seq2SeqAttn": "Sure ."
+        }
+    },
+    {
+        "prompt": "would you prefer to be smart or happy ?",
+        "response": {
+            "CakeChat": "i don ' t think so",
+            "NCM": "i would be happy if you are happy .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what are you life and career goals ?",
+        "response": {
+            "CakeChat": "nothing i ' m just trying to make it",
+            "NCM": "i am not .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is your dream ?",
+        "response": {
+            "CakeChat": "you ' re a little late . i ' ll be there tomorrow .",
+            "NCM": "i want to be a veterinarian .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what is the deepest spot on the world ?",
+        "response": {
+            "CakeChat": "it ' s not a game .",
+            "NCM": "the pacific ocean .",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "how do you want to be remembered ?",
+        "response": {
+            "CakeChat": "i ' m not sure , but it ' s kind of weird .",
+            "NCM": "i thought you 'd never ask .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "can we live a week without eating ?",
+        "response": {
+            "CakeChat": "i ' m not going to . . .",
+            "NCM": "yes , i can .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "can we live a week without drinking ?",
+        "response": {
+            "CakeChat": "i ' m not getting a drink . . .",
+            "NCM": "i don't know .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "do you live with your parents ?",
+        "response": {
+            "CakeChat": "yes , i do .",
+            "NCM": "no .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "how would you describe yourself in three words ?",
+        "response": {
+            "CakeChat": "i ' m not sure .",
+            "NCM": "i like socialism .",
+            "OpenNMT Seq2SeqAttn": "how ."
+        }
+    },
+    {
+        "prompt": "do you like the sound of silence ?",
+        "response": {
+            "CakeChat": "i don ' t know . . .",
+            "NCM": "i don't know .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what 's the meaning of happiness ?",
+        "response": {
+            "CakeChat": "i think it ' s a quote from a \" new \" one .",
+            "NCM": "i don't know .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "dude , i don 't understand whatever you said ...",
+        "response": {
+            "CakeChat": "hey , let ' s go to the park .",
+            "NCM": "i don 't understand any of this .",
+            "OpenNMT Seq2SeqAttn": ""
+        }
+    },
+    {
+        "prompt": "what are your three weaknesses ?",
+        "response": {
+            "CakeChat": "you ' re not a man .",
+            "NCM": "lust , greed , and corruption .",
+            "OpenNMT Seq2SeqAttn": "I &apos;m a what ."
+        }
+    },
+    {
+        "prompt": "how many years in a decade ?",
+        "response": {
+            "CakeChat": "i think it ' s a decade since we ' ve talked about the past 4 years . . .",
+            "NCM": "twenty - five .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "i 'm sick of this conversation !",
+        "response": {
+            "CakeChat": "please stop !",
+            "NCM": "get out !",
+            "OpenNMT Seq2SeqAttn": "i &apos;m sorry ."
+        }
+    },
+    {
+        "prompt": "who love you the most ?",
+        "response": {
+            "CakeChat": "no you don ' t",
+            "NCM": "i do .",
+            "OpenNMT Seq2SeqAttn": "who ."
+        }
+    },
+    {
+        "prompt": "what are you crazy about ?",
+        "response": {
+            "CakeChat": "no idea .",
+            "NCM": "i 'm not the one who 's crazy .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "who are you crazy about ?",
+        "response": {
+            "CakeChat": "i ' m not sure",
+            "NCM": "you 're the one who 's crazy .",
+            "OpenNMT Seq2SeqAttn": "who ."
+        }
+    },
+    {
+        "prompt": "do you run faster if someone chases you ?",
+        "response": {
+            "CakeChat": "no , i don ' t .",
+            "NCM": "i don 't run",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "what 's the weirdest thing that you have done ?",
+        "response": {
+            "CakeChat": "i think someone has a new phone . . .",
+            "NCM": "i have been here for hours .",
+            "OpenNMT Seq2SeqAttn": "oh , i was just thinking ."
+        }
+    },
+    {
+        "prompt": "best compliment you have received ?",
+        "response": {
+            "CakeChat": "why not ?",
+            "NCM": "i need to know the truth .",
+            "OpenNMT Seq2SeqAttn": "Yes ."
+        }
+    },
+    {
+        "prompt": "what question do you hate to answer ?",
+        "response": {
+            "CakeChat": "if you ' re not a real fan of the uk , i ' m sure the answers are more important than your opinion .",
+            "NCM": "what are you ?",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "i mean , why do we have to live in a place like this ?",
+        "response": {
+            "CakeChat": "i ' m not sure",
+            "NCM": "i mean , what kind of places am i in ?",
+            "OpenNMT Seq2SeqAttn": "i mean , i don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "okay , do you know why we have to talk so much ?",
+        "response": {
+            "CakeChat": "i don ' t know",
+            "NCM": "because i don 't think you 're gonna be able to get through to him .",
+            "OpenNMT Seq2SeqAttn": "Because you &apos;re not the only one ."
+        }
+    },
+    {
+        "prompt": "do you like mexican food or indian food ?",
+        "response": {
+            "CakeChat": "i ' m mexican",
+            "NCM": "i hate it .",
+            "OpenNMT Seq2SeqAttn": "mexican ."
+        }
+    },
+    {
+        "prompt": "what 's thirty plus forty ?",
+        "response": {
+            "CakeChat": "i ' m not sure . . .",
+            "NCM": "sixty ?",
+            "OpenNMT Seq2SeqAttn": "what ."
+        }
+    },
+    {
+        "prompt": "should we dance ?",
+        "response": {
+            "CakeChat": "what ' s your favourite song ?",
+            "NCM": "yeah , let 's dance .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "you 're not going to eat , are you ?",
+        "response": {
+            "CakeChat": "yes , i am .",
+            "NCM": "no .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "tell me something about your parents ?",
+        "response": {
+            "CakeChat": "i ' m just gonna send you a pic of where they are and how to work",
+            "NCM": "my mother is dead .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "tell me something about your house ?",
+        "response": {
+            "CakeChat": "i ' m not sure",
+            "NCM": "my house is bigger than yours .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    },
+    {
+        "prompt": "where do you live in town ?",
+        "response": {
+            "CakeChat": "i live in massachusetts",
+            "NCM": "i 'm from the countryside .",
+            "OpenNMT Seq2SeqAttn": "where ."
+        }
+    },
+    {
+        "prompt": "how old is your father ?",
+        "response": {
+            "CakeChat": "he ' s in the middle of the month",
+            "NCM": "he's fifty .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "what does your father do ?",
+        "response": {
+            "CakeChat": "i do not know . . .",
+            "NCM": "he's a toolmaker .",
+            "OpenNMT Seq2SeqAttn": "I don &apos;t know ."
+        }
+    },
+    {
+        "prompt": "does your father have a lot of money to support you ?",
+        "response": {
+            "CakeChat": "no , but i don ' t think he ' s getting any .",
+            "NCM": "he's a very good businessman .",
+            "OpenNMT Seq2SeqAttn": "No ."
+        }
+    }
+]
+}

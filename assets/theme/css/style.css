@@ -431,3 +431,10 @@ nav .mbr-section-btn {
 .disable-animations *:before {
     transition: none !important;
 }
+
+.modal-open {
+  position: fixed;
+  overflow: scroll;
+  width: 100%;
+  padding-right: 0!important;
+}
