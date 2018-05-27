@@ -1,0 +1,2 @@
+datasets = ["NCM", "DBDC", "TwitterRandom", "OpenSubtitlesRandom"];
+models = ["Human", "Cakechat", "Seq2SeqAttn", "NCM_Vinyals"];

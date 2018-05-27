@@ -9,7 +9,8 @@ section,
 .container,
 .container-fluid {
   position: relative;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  padding-top: 30px;}
 
 a.mbr-iconfont:hover {
   text-decoration: none; }
@@ -437,4 +438,12 @@ nav .mbr-section-btn {
   overflow: scroll;
   width: 100%;
   padding-right: 0!important;
+}
+
+.list-group-item {
+  padding: 0.15rem 1.0rem;
+}
+
+.conversation {
+  padding-bottom: 1rem;
 }
