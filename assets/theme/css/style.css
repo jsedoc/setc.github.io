@@ -442,8 +442,27 @@ nav .mbr-section-btn {
 
 .list-group-item {
   padding: 0.15rem 1.0rem;
+  text-align: left
 }
 
 .conversation {
   padding-bottom: 1rem;
+}
+
+.left-side {
+  text-align: left;
+  width:50%;
+  display: inline-block;
+}
+
+.right-side {
+  text-align: right;
+  width:50%;
+  display: inline-block;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #333333;
+    border-color: #333333;
 }

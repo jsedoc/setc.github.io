@@ -74,9 +74,9 @@
                 <label for="modelSelection">Select a model:</label>
                 <!--TODO: Dyamically set model and checkpoint options -->
                 <select class="form-control" id="modelSelection" onchange="onModelSelect()">
-                  <option>NCM</option>
-                  <option>Seq2SeqAttn</option>
                   <option>CakeChat</option>
+                  <option>NCM</option>
+                  <option>OpenNMT Seq2SeqAttn</option>
                   <option>Something</option>
                   <option>SomethingElse</option>
                 </select>                  
@@ -99,6 +99,7 @@
         <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7" id='profile' style="visibility: 'hidden'">
           <div id="profileTitle"></div>
           <div id="profileContents"></div>
+          <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Automatic Evaluation</h3>
           <table class="table table-bordered table-sm" id='metricsTable'>
             <thead class="thead-dark">
               <tr>
@@ -109,7 +110,11 @@
             <tbody>
             </tbody>
           </table>
+          <br/><h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Human Evaluation</h3>
           <div id="chart_div"></div>    
+          <br/><h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Model Responses</h3>
+          <div class="align-center" id="responses">           
+        </div>
         </div>
       </div>
     </div>
