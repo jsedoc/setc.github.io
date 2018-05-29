@@ -51,6 +51,7 @@
                     
                     Submit</a></div>
         </div>
+        
     </nav>
 </section>
 
@@ -58,9 +59,82 @@
     
      
 
-    <div class="container">
+    <div class="container" style="position:relative;">
         <div class="media-container-row">
-            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p><br></p><p>TODO: Dan, your fancy HTML/JS should go here.</p></div>
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p><br></p>
+                <div id="sidebar" style="display:none;">
+        <table id="models">
+            <tr>
+                <th>Models</th>
+            </tr>
+        </table>
+        </div>
+        <div id="content" style="display:none;">
+            <table id="responses">
+                <tr>
+                    <th>Prompts</th>
+                </tr>
+            </table>
+        </div>
+                <script src="https://d3js.org/d3.v5.min.js"></script> 
+                <script src="scripts/checktable.js"></script>
+    
+                <style>
+        tr{
+            height:auto;
+            transition-property: height;
+            transition-duration: .5s;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            
+        }
+
+        th{
+            text-align:center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        #sidebar{
+            height: 80%;
+            width: 20%;
+            margin-top: 80px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: white; 
+            border: 1px solid #aaaaaa;
+            box-shadow: 10px 2px 15px grey;
+            
+        }
+        #content{
+            position: relative;
+            width: 100%;
+            padding: 10px;
+            
+        }
+    </style>
+
+
+
+        </div>
         </div>
     </div>
 </section>
