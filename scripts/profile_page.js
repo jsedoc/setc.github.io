@@ -9,8 +9,8 @@ This gets run when the web page first loads.
 local['chosenModel'] = $('#modelSelection').val()
 local['chosenDataset'] = null
 
-parseHash()
-loadProfile()
+parseHash();
+onModelSelect();
 }
 
 
@@ -173,16 +173,21 @@ function parseHash() {
     document.getElementById("modelSelection").value = local['chosenModel']
 
     setDatasetFormOptions(local['chosenModel'])
+  } else {
+    document.getElementById("modelSelection").value = '';
   }
+
   if (params['dataset'] != null) {
     local['chosenDataset'] = params['dataset'].replace(/_/g, " ");
     document.getElementById("datasetSelection").value = local['chosenDataset']
 
     $('#datasetSelection').attr("disabled", false);
-  } else {
+  } else if (document.getElementById("modelSelection").value == '') {
     $('#datasetSelection').attr("disabled", true);
+    document.getElementById("datasetSelection").value = '';
   }
 }
+
 function updateHash(chosenModel, chosenDataset) {
   if (chosenDataset == null) {
     chosenDataset = 'null'
@@ -193,6 +198,10 @@ function updateHash(chosenModel, chosenDataset) {
 
 function onModelSelect() {
   chosenModel = $('#modelSelection').val()
+  if (chosenModel === '') {
+    return
+  }
+
   local['chosenModel'] = chosenModel
 
   setDatasetFormOptions(chosenModel);
@@ -230,7 +239,6 @@ function onDatasetSelect() {
 
 function loadResponses(chosenDataset, chosenModel) {
   // TODO: This should be put in a utils.js rather than being compied between profile_page.js and responses_page.js
-  consol
   if (chosenDataset in responses) {
     var conversations = responses[chosenDataset]['data'];
 
@@ -255,3 +263,5 @@ function loadResponses(chosenDataset, chosenModel) {
     document.getElementById('responses').innerHTML = 'Responses are not yet available.';
   }
 } 
+
+[000057, 001355, 005584, 006735, 007560, 008414, 009965, 011332, 012078, 012885]
