@@ -1,0 +1,27 @@
+models =
+{
+	"Human": 
+	{
+		"code_path": "None",
+		"checkpoint_path": "None",
+		"description": "Human responses to the prompts in the evaluation set.",
+	},
+	"CakeChat":
+	{
+		"code_path": "TODO",
+		"checkpoint_path": "TODO",
+		"description": "Pre-trained model from https://github.com/lukalabs/cakechat",
+	},
+	"OpenNMT Seq2SeqAttn":
+	{
+		"code_path": "None",
+		"checkpoint_path": "None",
+		"description": "Trained On Twitter.",
+	},
+	"NCM":
+	{
+		"code_path": "None",
+		"checkpoint_path": "None",
+		"description": "Responses extracted from http://ai.stanford.edu/~quocle/QAresults.pdf for the paper https://arxiv.org/pdf/1506.05869.pdf.",
+	}
+};

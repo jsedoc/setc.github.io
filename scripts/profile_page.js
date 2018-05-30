@@ -133,10 +133,17 @@ function getPossibleDatasets(modelName) {
 
     // Update the links
     // TODO: Replace these with real links
-    var links = '<p>Paper: www.foo.edu</p>';
-    links +=  '<p>Code: www.github.com</p>';
-    links += '<p>Checkpoints: www.amazon.com/</p>';
-    document.getElementById('profileContents').innerHTML = links;
+    console.log(chosenModel);
+    console.log(models);
+    if (chosenModel in models) {
+      modelInfo = models[chosenModel]
+      var links = '<p><b>Description:</b> ' + modelInfo['description'] + '</p>';
+      links +=  '<p><b>Code:</b> ' + modelInfo['code_path'] + '</p>';
+      links += '<p><b>Checkpoints:</b> ' + modelInfo['checkpoint_path'] + '</p>';
+      document.getElementById('profileContents').innerHTML = links;
+    } else {
+      document.getElementById('profileContents').innerHTML = '<p>No model info found</p>';
+    }
 
     // Update the metrics table
     // TODO: all of this needs to be completely rewritten when I know the format the data will be in.
