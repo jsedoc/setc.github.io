@@ -2,25 +2,137 @@ voteData =
 {
     "NCM": [
         {
-            "m1win": 12,
-            "m2win": 32,
-            "model1": "OpenNMT Seq2SeqAttn",
-            "model2": "Human1",
-            "tie": 12
+            "m1win": 283,
+            "m2win": 184,
+            "model1": "Cakechat",
+            "model2": "Seq2SeqAttn Twitter",
+            "tie": 133
         },
         {
-            "m1win": 24,
-            "m2win": 24,
-            "model1": "OpenNMT Seq2SeqAttn",
+            "m1win": 259,
+            "m2win": 280,
+            "model1": "Cakechat",
+            "model2": "OpenNMT Seq2SeqAttn",
+            "tie": 41
+        },
+        {
+            "m1win": 251,
+            "m2win": 165,
+            "model1": "Seq2SeqAttn OpenSubtitles",
+            "model2": "Cakechat",
+            "tie": 184
+        },
+        {
+            "m1win": 105,
+            "m2win": 120,
+            "model1": "Seq2SeqAttn OpenSubtitles without PTE",
+            "model2": "Seq2SeqAttn OpenSubtitles",
+            "tie": 114
+        },
+        {
+            "m1win": 167,
+            "m2win": 244,
+            "model1": "Seq2SeqAttn Twitter without PTE",
+            "model2": "Seq2SeqAttn Twitter",
+            "tie": 153
+        },
+        {
+            "m1win": 76,
+            "m2win": 242,
+            "model1": "Cakechat",
+            "model2": "NCM",
+            "tie": 102
+        },
+        {
+            "m1win": 431,
+            "m2win": 67,
+            "model1": "Human1",
+            "model2": "Seq2SeqAttn Twitter",
+            "tie": 99
+        },
+        {
+            "m1win": 166,
+            "m2win": 240,
+            "model1": "Human1",
             "model2": "Human2",
-            "tie": 52
+            "tie": 176
         },
         {
-            "m1win": 45,
-            "m2win": 12,
+            "m1win": 329,
+            "m2win": 183,
+            "model1": "NCM",
+            "model2": "Cakechat",
+            "tie": 88
+        },
+        {
+            "m1win": 392,
+            "m2win": 118,
+            "model1": "NCM",
+            "model2": "Seq2SeqAttn Twitter",
+            "tie": 87
+        },
+        {
+            "m1win": 333,
+            "m2win": 120,
+            "model1": "NCM",
+            "model2": "OpenNMT Seq2SeqAttn",
+            "tie": 147
+        },
+        {
+            "m1win": 216,
+            "m2win": 173,
+            "model1": "NCM",
+            "model2": "Human1",
+            "tie": 181
+        },
+        {
+            "m1win": 98,
+            "m2win": 149,
+            "model1": "NCM",
+            "model2": "Human2",
+            "tie": 142
+        },
+        {
+            "m1win": 166,
+            "m2win": 218,
+            "model1": "Seq2SeqAttn OpenSubtitles",
+            "model2": "Seq2SeqAttn OpenSubtitles Questions",
+            "tie": 84
+        },
+        {
+            "m1win": 92,
+            "m2win": 104,
             "model1": "OpenNMT Seq2SeqAttn",
-            "model2": "CakeChat",
-            "tie": 65
+            "model2": "Seq2SeqAttn OpenSubtitles Questions",
+            "tie": 139
+        },
+        {
+            "m1win": 49,
+            "m2win": 374,
+            "model1": "Seq2SeqAttn OpenSubtitles Questions",
+            "model2": "Human2",
+            "tie": 177
+        },
+        {
+            "m1win": 179,
+            "m2win": 337,
+            "model1": "Human2",
+            "model2": "Seq2SeqAttn OpenSubtitles Questions",
+            "tie": 84
+        },
+        {
+            "m1win": 245,
+            "m2win": 251,
+            "model1": "Seq2SeqAttn OpenSubtitles",
+            "model2": "Seq2SeqAttn Twitter",
+            "tie": 104
+        },
+        {
+            "m1win": 40,
+            "m2win": 460,
+            "model1": "Seq2SeqAttn Twitter",
+            "model2": "Human2",
+            "tie": 70
         }
     ],
     "DBDC": [
