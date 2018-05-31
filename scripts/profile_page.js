@@ -53,8 +53,9 @@ function parseData(voteData, dataset, targetModel) {
 
    var options = {
     title: 'Human evaluation on dataset: ' + targetDataset,
-    chartArea: {width: '50%'},
+    chartArea: {width: '50%', height:'100%'},
     isStacked: 'percent',
+    legend:'right',
     annotations: {
       alwaysOutside: false,
       textStyle: {
@@ -270,5 +271,3 @@ function loadResponses(chosenDataset, chosenModel) {
     document.getElementById('responses').innerHTML = 'Responses are not yet available.';
   }
 } 
-
-[000057, 001355, 005584, 006735, 007560, 008414, 009965, 011332, 012078, 012885]
