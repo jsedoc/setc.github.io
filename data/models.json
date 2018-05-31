@@ -1,27 +1,53 @@
 models =
 {
-	"Human": 
-	{
-		"code_path": "None",
-		"checkpoint_path": "None",
-		"description": "Human responses to the prompts in the evaluation set.",
-	},
-	"CakeChat":
-	{
-		"code_path": "TODO",
-		"checkpoint_path": "TODO",
-		"description": "Pre-trained model from https://github.com/lukalabs/cakechat",
-	},
-	"OpenNMT Seq2SeqAttn":
-	{
-		"code_path": "None",
-		"checkpoint_path": "None",
-		"description": "Trained On Twitter.",
-	},
-	"NCM":
-	{
-		"code_path": "None",
-		"checkpoint_path": "None",
-		"description": "Responses extracted from http://ai.stanford.edu/~quocle/QAresults.pdf for the paper https://arxiv.org/pdf/1506.05869.pdf.",
-	}
+    "CakeChat": {
+        "author_id": 4,
+        "comments": "The model is trained with context size 3 where the encoded sequence contains 30 tokens or less and the decoded sequence contains 32 tokens or less. Both encoder and decoder contain 2 GRU layers with 512 hidden units each.",
+        "cp_location": "https://github.com/lukalabs/cakechat#using-a-pre-trained-model",
+        "description": "This is from Luka Lab",
+        "model_id": 3,
+        "name": "CakeChat",
+        "pred_location": "https://github.com/jsedoc/SETC/blob/master/eval_data/ncm/neural_conv_model_cakechat_responses.txt",
+        "repo info": "https://github.com/lukalabs/cakechat"
+    },
+    "NCM": {
+        "author_id": 3,
+        "comments": "Responses extracted from http://ai.stanford.edu/~quocle/QAresults.pdf for the paper https://arxiv.org/pdf/1506.05869.pdf.",
+        "cp_location": "not available",
+        "description": "Neural Conversation Model",
+        "model_id": 1,
+        "name": "NCM",
+        "pred_location": "https://github.com/jsedoc/SETC/blob/master/eval_data/ncm/neural_conv_model_eval_responses.txt",
+        "repo info": "not available"
+    },
+    "OpenNMT Seq2SeqAttn": {
+        "author_id": 2,
+        "comments": "2 layers, LSTM 500, WE 500, input feed, dropout 0.2, global_attention mlp, start_decay_at 7\n13 epochs",
+        "cp_location": "http://lstm.seas.harvard.edu/latex/opennmt-py-models/dialog/model_acc_39.74_ppl_26.63_e13.pt",
+        "description": "Model from the OpenNMT website",
+        "model_id": 2,
+        "name": "OpenNMT Seq2SeqAttn",
+        "pred_location": "https://s3.amazonaws.com/chatbot-eval-data/results/AMT_NCM_Test_NCM_Harvard/pred.txt.harvard_opennmt_model_acc_39.74_ppl_26.63_e13.pt",
+        "repo info": "338b3b1 https://github.com/OpenNMT/OpenNMT-py"
+    },
+    "Seq2SeqAttn OpenSubtitles": {
+        "author_id": 1,
+        "comments": "OpenNMT-py Seq2Seq default parameters; however,  two layers  of  LSTMs  with  512  hidden  neurons  forthe  bidirectional  encoder  and  the  unidirectional decoder.",
+        "cp_location": "http://chatbot-eval-data.s3-accelerate.amazonaws.com/results/paper/OpenNMT-py_checkpoints/OS/seed_700_def_attn_glove_emb_osc2_acc_25.26_ppl_196.88_e13.pt",
+        "description": "Sequence to Sequence model using attention trained using OpenNMT-py. The training data is OpenSubtitles2013 subsets.",
+        "model_id": 4,
+        "name": "Seq2SeqAttn OpenSubtitles",
+        "pred_location": "https://s3.amazonaws.com/chatbot-eval-data/results/AMT_NCM_Test_Cakechat_OS/pred.txt.seed_700_def_attn_glove_emb_osc2_acc_25.26_ppl_196.88_e13.pt",
+        "repo info": "4c8d7f7 https://github.com/OpenNMT/OpenNMT-py"
+    },
+    "Seq2SeqAttn Twitter": {
+        "author_id": 1,
+        "comments": "OpenNMT-py Seq2Seq default parameters; however,   two layers  of  LSTMs  with  512  hidden  neurons  forthe  bidirectional  encoder  and  the  unidirectional decoder.",
+        "cp_location": "http://chatbot-eval-data.s3-accelerate.amazonaws.com/results/paper/OpenNMT-py_checkpoints/Twitter/seed_700_glove_emb_twitter_clean_acc_22.13_ppl_141.92_e13.pt",
+        "description": "Sequence to Sequence model using attention trained using OpenNMT-py. The training data is Twitter dataset downloaded via ParlAi with cleaning like Ritter (2011).",
+        "model_id": 5,
+        "name": "Seq2SeqAttn Twitter",
+        "pred_location": "https://s3.amazonaws.com/chatbot-eval-data/results/AMT_NCM_Test_OS_Twitter/pred.txt.seed_701_glove_emb_twitter_clean_acc_22.21_ppl_140.75_e13.pt",
+        "repo info": "4c8d7f7 https://github.com/OpenNMT/OpenNMT-py"
+    }
 };
