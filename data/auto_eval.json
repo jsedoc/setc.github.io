@@ -1,0 +1,127 @@
+autoEvalData=
+{
+    "DBDC": {
+        "OpenNMT Seq2SeqAttn": {
+            "Average Length": 2.79,
+            "distinct-1": 0.17142857142857143,
+            "distinct-2": 0.24464285714285713
+        },
+        "Seq2SeqAttn OpenSubtitles Questions": {
+            "Average Length": 8.54,
+            "distinct-1": 0.08952603861907549,
+            "distinct-2": 0.17203042715038033
+        }
+    },
+    "NCM": {
+        "Cakechat": {
+            "Average Length": 8.475,
+            "Average Sentence BLEU-2": 0.31079598009683146,
+            "Embedding Average Score": [
+                0.42621673533968185,
+                0.001765225122008011,
+                0.1765225122008011
+            ],
+            "distinct-1": 0.17876106194690267,
+            "distinct-2": 0.40707964601769914
+        },
+        "Human1": {
+            "Average Length": 2.925,
+            "Average Sentence BLEU-2": 1.0,
+            "Embedding Average Score": [
+                0.4267271976169359,
+                0.0020099655508807645,
+                0.20099655508807643
+            ],
+            "distinct-1": 0.31399317406143346,
+            "distinct-2": 0.42150170648464164
+        },
+        "Human2": {
+            "Average Length": 5.365,
+            "Average Sentence BLEU-2": 1.0,
+            "Embedding Average Score": [
+                1.0,
+                1.5860328923216522e-18,
+                1.5860328923216522e-16
+            ],
+            "distinct-1": 0.39517625231910947,
+            "distinct-2": 0.6957328385899815
+        },
+        "NCM": {
+            "Average Length": 4.875,
+            "Average Sentence BLEU-2": 0.43002762130286404,
+            "Embedding Average Score": [
+                0.4254848312599099,
+                0.0020122029617906123,
+                0.2012202961790612
+            ],
+            "distinct-1": 0.3312820512820513,
+            "distinct-2": 0.598974358974359
+        },
+        "OpenNMT Seq2SeqAttn": {
+            "Average Length": 3.425,
+            "Average Sentence BLEU-2": 0.48068638491777727,
+            "Embedding Average Score": [
+                0.3859915548972481,
+                0.0018632040107728386,
+                0.18632040107728384
+            ],
+            "distinct-1": 0.1282798833819242,
+            "distinct-2": 0.17638483965014579
+        },
+        "Seq2SeqAttn OpenSubtitles": {
+            "Average Length": 2.145,
+            "Average Sentence BLEU-2": 0.37366966700071486,
+            "Embedding Average Score": [
+                0.34847168297537034,
+                0.0021042824768534663,
+                0.21042824768534663
+            ],
+            "distinct-1": 0.17715617715617715,
+            "distinct-2": 0.18181818181818182
+        },
+        "Seq2SeqAttn OpenSubtitles Questions": {
+            "Average Length": 3.625,
+            "Average Sentence BLEU-2": 0.4589644133101594,
+            "Embedding Average Score": [
+                0.43452249775004653,
+                0.0025150903339179738,
+                0.25150903339179737
+            ],
+            "distinct-1": 0.15521978021978022,
+            "distinct-2": 0.28708791208791207
+        },
+        "Seq2SeqAttn OpenSubtitles without PTE": {
+            "Average Length": 2.125,
+            "Average Sentence BLEU-2": 0.34047928036099945,
+            "Embedding Average Score": [
+                0.3345678475312945,
+                0.002200605870726592,
+                0.2200605870726592
+            ],
+            "distinct-1": 0.1811764705882353,
+            "distinct-2": 0.18352941176470589
+        },
+        "Seq2SeqAttn Twitter": {
+            "Average Length": 4.145,
+            "Average Sentence BLEU-2": 0.17082691266302702,
+            "Embedding Average Score": [
+                0.37745890191992126,
+                0.002038366432347632,
+                0.2038366432347632
+            ],
+            "distinct-1": 0.2436670687575392,
+            "distinct-2": 0.3558504221954162
+        },
+        "Seq2SeqAttn Twitter without PTE": {
+            "Average Length": 3.835,
+            "Average Sentence BLEU-2": 0.1407815146825401,
+            "Embedding Average Score": [
+                0.2659311488941501,
+                0.00267215248071044,
+                0.267215248071044
+            ],
+            "distinct-1": 0.14341590612777053,
+            "distinct-2": 0.2242503259452412
+        }
+    }
+};
