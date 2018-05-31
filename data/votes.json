@@ -1,5 +1,14 @@
 voteData = 
 {
+    "DBDC": [
+        {
+            "m1win": 180,
+            "m2win": 211,
+            "model1": "OpenNMT Seq2SeqAttn",
+            "model2": "Seq2SeqAttn OpenSubtitles Questions",
+            "tie": 101
+        }
+    ],
     "NCM": [
         {
             "m1win": 283,
@@ -134,28 +143,5 @@ voteData =
             "model2": "Human2",
             "tie": 70
         }
-    ],
-    "DBDC": [
-        {
-            "m1win": 12,
-            "m2win": 32,
-            "model1": "OpenNMT Seq2SeqAttn",
-            "model2": "Human1",
-            "tie": 12
-        },
-        {
-            "m1win": 24,
-            "m2win": 24,
-            "model1": "Human2",
-            "model2": "OpenNMT Seq2SeqAttn",
-            "tie": 52
-        },
-        {
-            "m1win": 24,
-            "m2win": 12,
-            "model1": "OpenNMT Seq2SeqAttn",
-            "model2": "Foobar",
-            "tie": 65
-        }
     ]
-}
+};
