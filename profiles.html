@@ -24,6 +24,7 @@
   <script type="text/javascript" src="data/responses.json"></script>
   <script type="text/javascript" src="data/votes.json"></script>
   <script type="text/javascript" src="data/models.json"></script>
+  <script type="text/javascript" src="data/auto_eval.json"></script>
 
 </head>
 <body>
@@ -75,11 +76,6 @@
                 <label for="modelSelection">Select a model:</label>
                 <!--TODO: Dyamically set model and checkpoint options -->
                 <select class="form-control" id="modelSelection" onchange="onModelSelect()">
-                  <option>CakeChat</option>
-                  <option>NCM</option>
-                  <option>OpenNMT Seq2SeqAttn</option>
-                  <option>Something</option>
-                  <option>SomethingElse</option>
                 </select>                  
               </div>
               <div class="col">
@@ -108,7 +104,7 @@
                 <th scope="col">Value</th>
               </tr>
             </thead class="thead-dark">
-            <tbody>
+            <tbody id="metricsTableContents">
             </tbody>
           </table>
           <br/><h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">Human Evaluation</h3>
