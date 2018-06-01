@@ -3,14 +3,20 @@ google.charts.load('current', {packages: ['corechart', 'bar']});
 local = {}
 
 window.onload = function() {
-/**Contains initialization of various dataset parameters.
-This gets run when the web page first loads.
-**/
-local['chosenModel'] = $('#modelSelection').val()
-local['chosenDataset'] = null
+  /**Contains initialization of various dataset parameters.
+  This gets run when the web page first loads.
+  **/
+  local['chosenModel'] = $('#modelSelection').val()
+  local['chosenDataset'] = null
 
-parseHash();
-onModelSelect();
+  modelNames = Object.keys(models);
+  for (var idx=0; idx<modelNames.length; idx++) {
+    modelName = modelNames[idx];
+    document.getElementById('modelSelection').innerHTML += `<option>${modelName}</option>`;
+  }
+
+  parseHash();
+  onModelSelect();
 }
 
 
@@ -113,6 +119,58 @@ function getPossibleDatasets(modelName) {
     document.getElementById('datasetSelection').innerHTML = datasetSelectHtml
   }
 
+  function updateLinks(chosenModel) {
+    // Update the links
+    // TODO: Replace these with real links
+    if (chosenModel in models) {
+      modelInfo = models[chosenModel]
+      var links = '<p><b>Description:</b> ' + modelInfo['description'] + '</p>';
+      links +=  '<p><b>Code:</b> ' + modelInfo['code_path'] + '</p>';
+      links += '<p><b>Checkpoints:</b> ' + modelInfo['checkpoint_path'] + '</p>';
+      document.getElementById('profileContents').innerHTML = links;
+    } else {
+      document.getElementById('profileContents').innerHTML = '<p>No model info found</p>';
+    }
+  }
+
+  function formatFloatStr(x) {
+    // Takes a float in a string and formats it to a nicer float with only 3 decimal places.
+    x = parseFloat(x);
+    x = Number((x).toFixed(3));
+    return x;
+  }
+
+  function updateAutoStats(chosenModel, chosenDataset) {
+    // Update the metrics table
+
+    var table = document.getElementById("metricsTable");
+    var tableContents = document.getElementById("metricsTableContents");
+    tableContents.innerHTML = '';
+
+    var data = autoEvalData[chosenDataset];
+    if (data == null) {
+      return;
+    }
+
+    data = data[chosenModel];
+    if (data == null) {
+      return;
+    }
+
+    scoresToShow = ['Average Length', 'Average Sentence BLEU-2', 'distinct-1', 'distinct-2'];
+    for (const [scoreName, scoreValue] of Object.entries(data)) {
+      if (scoreValue instanceof Array) {
+        scoreValueProcessed = scoreValue.map(formatFloatStr);
+        scoreValueProcessed = scoreValueProcessed.toString();
+      } else {
+        scoreValueProcessed = formatFloatStr(scoreValue);
+      } 
+      row = tableContents.insertRow();
+      row.insertCell().innerHTML = scoreName;
+      row.insertCell().innerHTML = scoreValueProcessed;
+    }
+  }
+
   function loadProfile() {
   /** Loads all of the info for the particular mode/dataset combination that has been chosen.
   If either of these values is null, then just clears the screen.
@@ -132,39 +190,17 @@ function getPossibleDatasets(modelName) {
     
     document.getElementById('profileTitle').innerHTML = title;
 
-    // Update the links
-    // TODO: Replace these with real links
-    console.log(chosenModel);
-    console.log(models);
-    if (chosenModel in models) {
-      modelInfo = models[chosenModel]
-      var links = '<p><b>Description:</b> ' + modelInfo['description'] + '</p>';
-      links +=  '<p><b>Code:</b> ' + modelInfo['code_path'] + '</p>';
-      links += '<p><b>Checkpoints:</b> ' + modelInfo['checkpoint_path'] + '</p>';
-      document.getElementById('profileContents').innerHTML = links;
-    } else {
-      document.getElementById('profileContents').innerHTML = '<p>No model info found</p>';
-    }
+    // Update the automatic stats.
+    updateAutoStats(chosenModel, chosenDataset);
 
-    // Update the metrics table
-    // TODO: all of this needs to be completely rewritten when I know the format the data will be in.
-    var table = document.getElementById("metricsTable");
-    if (table.rows.length == 3) {
-      table.deleteRow(-1);
-      table.deleteRow(-1);
-    }
-    distinct1Row = table.insertRow();
-    distinct1Row.insertCell().innerHTML = 'Distinct-1';
-    distinct1Row.insertCell().innerHTML = '0.01234';
-    distinct2Row = table.insertRow();
-    distinct2Row.insertCell().innerHTML = 'Average BLEU';
-    distinct2Row.insertCell().innerHTML = '0.01234';
+    // Update the information about the model.
+    updateLinks(chosenModel);
 
     // Update the bar graph
     drawBarGraph(chosenModel, chosenDataset);
 
     // Update the responses.
-    loadResponses(local['chosenDataset'], local['chosenModel']);
+    updateResponses(local['chosenDataset'], local['chosenModel']);
   }
 }
 
@@ -199,6 +235,9 @@ function parseHash() {
 function updateHash(chosenModel, chosenDataset) {
   if (chosenDataset == null) {
     chosenDataset = 'null'
+  }
+  if (chosenModel == null) {
+    chosenModel = 'null';
   }
   hash = 'model=' + chosenModel.replace(/ /g, "_") + "&dataset=" + chosenDataset.replace(/ /g, "_")
   window.location.hash = hash
@@ -245,7 +284,7 @@ function onDatasetSelect() {
 }
 
 
-function loadResponses(chosenDataset, chosenModel) {
+function updateResponses(chosenDataset, chosenModel) {
   // TODO: This should be put in a utils.js rather than being compied between profile_page.js and responses_page.js
   if (chosenDataset in responses) {
     var conversations = responses[chosenDataset]['data'];
